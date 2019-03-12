@@ -3,6 +3,7 @@ import ipdb
 
 
 def runner_up(n: int, arr: List) -> int:
+    print("Hello world")
     pass
 
 
