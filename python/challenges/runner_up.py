@@ -3,10 +3,9 @@ import ipdb
 
 
 def runner_up(n: int, arr: List) -> int:
-    sorted_set = sorted(arr, reverse=True)
+    pass
 
-    sorted_set.remove(arr_max)
-    return sorted_set.pop()
+
 
 
 if __name__ == "__main__":
