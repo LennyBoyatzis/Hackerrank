@@ -1,8 +1,18 @@
 def is_leap(year: int) -> bool:
-    divisible_by_4 = year % 4 == 0
-    divisible_by_100 = year % 100 == 0
-    divisible_by_400 = year % 400 == 0
+    is_leap = True
 
-    if divisible_by_4 and not divisible_by_100 or divisible_by_400:
-        return True
-    return False
+    if year % 4 != 0:
+        is_leap = False
+        return is_leap
+
+    if year % 100 == 0:
+        is_leap = False
+
+    if year % 400 == 0:
+        is_leap = True
+
+    return is_leap
+
+
+if __name__ == "__main__":
+    is_leap(1)
